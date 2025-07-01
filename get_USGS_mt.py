@@ -176,6 +176,7 @@ for event in catalog:
         try:
             mag_id = event.moment_tensor.moment_magnitude_id
         except:
+            mag_id = False
             pass
         
         if mag_id:
